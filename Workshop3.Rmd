@@ -48,7 +48,9 @@ survey_new<- survey%>% mutate(age=parse_number(how_old_are_you))
 
 survey_new%>% group_by(industry)%>% summarise(mean_age=mean(age))
 
-survey%>% count(country)
+
+
+
 
 ```
 
